@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <!--
+        Dokumentasi:
+        - Menggunakan Tailwind CSS untuk styling.
+        - Menggunakan file eksternal style.css untuk logo.
+        - Script welcomeSpeech dan sendMessage ada di js/script.js.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Axel</title>
@@ -13,6 +19,11 @@
 </head>
 
 <body>
+    <!--
+        Header:
+        - Menampilkan logo dan navbar.
+        - Navbar berisi link ke setiap section utama.
+    -->
     <!-- Main Header -->
     <header class="flex items-center justify-between p-[4] px-8 pt-4 bg-white shadow-md">
         <!-- Logo Icon -->
@@ -43,9 +54,8 @@
             <header>
                 <h1 class="text-3xl font-semibold text-gray-800">Our Profile</h1>
             </header>
-            <div class="flex items-start justify-left h-full">
-                <p>We are team of passionate individuals dedicated to delivering high-quality work.</p>
-            </div>
+            <p class="mx-auto w-fit mt-4">We are team of passionate individuals dedicated to delivering high-quality
+                work.</p>
         </section>
 
         <hr>
@@ -55,15 +65,15 @@
             <header>
                 <h1 class="text-3xl font-semibold text-gray-800">Portofolio</h1>
             </header>
-            <div class="flex items-start justify-left h-full">
-                <p>We are team of passionate individuals dedicated to delivering high-quality work.</p>
-            </div>
+            <p class="mx-auto w-fit mt-4">We are team of passionate individuals dedicated to delivering high-quality
+                work.</p>
         </section>
 
         <hr>
 
         <!-- Message Us -->
         <section id="messageUs" class="h-[400px] bg-gray-100">
+            <h1 class="text-3xl font-semibold text-gray-800 mt-4">Message Us</h1>
             <form action="">
                 <label for="message" class="block text-gray-700">Your Message:</label>
                 <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded"></textarea>
@@ -77,6 +87,10 @@
     <footer class="flex items-center justify-center p-4 bg-gray-200">
         <span>&copy; 2024 Axel Portfolio</span>
     </footer>
+    <!--
+        Script eksternal:
+        - js/script.js berisi fungsi interaktif welcomeSpeech dan sendMessage.
+    -->
     <!-- JS External -->
     <script src="js/script.js"></script>
 </body>

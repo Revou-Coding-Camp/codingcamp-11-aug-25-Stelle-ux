@@ -1,3 +1,13 @@
+/**
+ * Script interaktif untuk halaman portfolio Axel.
+ * - welcomeSpeech: Menampilkan prompt nama pengguna dan update greeting.
+ * - sendMessage: Mengirim pesan dari form dan validasi input.
+ */
+
+/**
+ * Fungsi yang dipanggil saat halaman selesai dimuat.
+ * Memanggil welcomeSpeech untuk meminta nama pengguna.
+ */
 window.onload = function() {
     welcomeSpeech();
 }
@@ -5,7 +15,7 @@ window.onload = function() {
 /**
  * Menampilkan prompt untuk meminta nama pengguna dan
  * mengubah teks elemen dengan id 'user-greeting' sesuai nama yang dimasukkan.
- * Jika nama tidak diisi, akan menampilkan 'Guest'.
+ * Jika nama tidak diisi, akan menampilkan alert.
  */
 function welcomeSpeech() {
     let username = prompt("What is your name?");

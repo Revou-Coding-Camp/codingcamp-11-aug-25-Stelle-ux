@@ -1,3 +1,8 @@
+/**
+ * CSS untuk styling logo utama pada halaman portfolio Axel.
+ * .main-logo: Menampilkan gambar bulat sebagai logo.
+ */
+
 .main-logo {
     background-image: url("https://picsum.photos/seed/picsum/200/300");
     background-size: cover;
