@@ -1,29 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Axel</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- Main Header -->
-    <header>
-
+    <header class="flex items-center justify-between p-[4] px-8 pt-4 bg-white shadow-md">
+        <!-- Logo Icon -->
+        <div class="bg-blue-500 rounded-full h-[75px] w-[75px] main-logo mr-8"></div>
+        <nav>
+            <ul class="flex space-x-4 ">
+                <li><a href="#homePage" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Home</a></li>
+                <li><a href="#ourProfile" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">About</a></li>
+                <li><a href="#portfolio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Projects</a></li>
+                <li><a href="#messageUs" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Main Content -->
     <main>
+        <!-- Home -->
+        <section id="homePage" class="text-center h-[400px] bg-gray-100">
+            <div class="flex items-center justify-center h-full">
+                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting">User</span> to My
+                    Portfolio</h1>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Our Profile -->
+        <section id="ourProfile" class="text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-3xl font-semibold text-gray-800">Our Profile</h1>
+            </header>
+            <div class="flex items-start justify-left h-full">
+                <p>We are team of passionate individuals dedicated to delivering high-quality work.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Portofolio -->
+        <section id="portfolio" class="text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-3xl font-semibold text-gray-800">Portofolio</h1>
+            </header>
+            <div class="flex items-start justify-left h-full">
+                <p>We are team of passionate individuals dedicated to delivering high-quality work.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Message Us -->
+        <section id="messageUs" class="h-[400px] bg-gray-100">
+            <form action="">
+                <label for="message" class="block text-gray-700">Your Message:</label>
+                <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded"></textarea>
+                <button type="button" onclick="sendMessage()"
+                    class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Send</button>
+            </form>
+        </section>
 
     </main>
     <!-- Footer -->
-    <footer>
-
+    <footer class="flex items-center justify-center p-4 bg-gray-200">
+        <span>&copy; 2024 Axel Portfolio</span>
     </footer>
     <!-- JS External -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
