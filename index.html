@@ -2,97 +2,134 @@
 <html lang="en">
 
 <head>
-    <!--
-        Dokumentasi:
-        - Menggunakan Tailwind CSS untuk styling.
-        - Menggunakan file eksternal style.css untuk logo.
-        - Script welcomeSpeech dan sendMessage ada di js/script.js.
-    -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Axel</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Tailwind CSS CDN -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!--
-        Header:
-        - Menampilkan logo dan navbar.
-        - Navbar berisi link ke setiap section utama.
-    -->
-    <!-- Main Header -->
-    <header class="flex items-center justify-between p-[4] px-8 pt-4 bg-white shadow-md">
-        <!-- Logo Icon -->
-        <div class="bg-blue-500 rounded-full h-[75px] w-[75px] main-logo mr-8"></div>
-        <nav>
-            <ul class="flex space-x-4 ">
-                <li><a href="#homePage" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Home</a></li>
-                <li><a href="#ourProfile" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">About</a></li>
-                <li><a href="#portfolio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Projects</a></li>
-                <li><a href="#messageUs" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px]">Contact</a></li>
-            </ul>
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <header
+        class="flex flex-col md:flex-row items-center justify-between bg-gray-400 p-4 shadow space-y-2 md:space-y-0">
+        <div class="flex items-center space-x-2">
+            <div class="rounded-full h-12 w-12 overflow-hidden flex items-center justify-center bg-blue-100">
+                <img src="./IMG/icon.jpg" class="h-12 w-12 object-cover" alt="Logo" />
+            </div>
+        </div>
+        <nav class="flex flex-wrap justify-center gap-2 md:gap-4">
+            <a href="#home" class="px-3 py-1 border rounded">Home</a>
+            <a href="#profile" class="px-3 py-1 border rounded">My Profile</a>
+            <a href="#portofolio" class="px-3 py-1 border rounded">Portofolio</a>
+            <a href="#messageUs" class="px-3 py-1 border rounded">Message Us</a>
         </nav>
     </header>
-    <!-- Main Content -->
-    <main>
-        <!-- Home -->
-        <section id="homePage" class="text-center h-[400px] bg-gray-100">
-            <div class="flex items-center justify-center h-full">
-                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting">User</span> to My
-                    Portfolio</h1>
+
+    <!-- Hero -->
+    <section id="home" class="relative p-4 sm:p-8">
+        <div class="relative w-full h-64 sm:h-80 md:h-96">
+            <img src="./IMG/hero.jpg" alt="Hero" class="w-full h-full object-cover rounded" />
+            <div class="absolute inset-0 flex flex-col justify-center text-white bg-black bg-opacity-30 p-6 sm:p-10">
+                <h1 class="text-2xl sm:text-3xl font-bold" id="welcome-text">Hi, <span id="user-name">USER</span>
+                    Welcome To Website Axel</h1>
+                <p class="text-base sm:text-lg">Ini adalah website latihan pertama</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
+    <!-- Profile -->
+    <section id="profile" class="p-4 sm:p-8 border-t">
+        <h2 class="text-xl font-bold mb-4">Profile Pribadi</h2>
+        <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+            <img src="./IMG/profile.jpg" alt="Profile" class="rounded-full border w-32 h-32" />
+            <div>
+                <p><strong>Nama:</strong> Name</p>
+                <p><strong>Tanggal Lahir:</strong> Date</p>
+                <p><strong>Hobi:</strong> Belajar Web Development dan design</p>
+                <p><strong>Deskripsi:</strong> Seorang yang sedang belajar membuat website dengan HTML, Tailwind CSS,
+                    dan JavaScript.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Our Profile -->
-        <section id="ourProfile" class="text-center h-[400px] bg-gray-100">
-            <header>
-                <h1 class="text-3xl font-semibold text-gray-800">Our Profile</h1>
-            </header>
-            <p class="mx-auto w-fit mt-4">We are team of passionate individuals dedicated to delivering high-quality
-                work.</p>
-        </section>
+    <!-- Visi Misi -->
+    <section class="p-4 sm:p-6 border-t">
+        <div>
+            <h2 class="text-xl font-bold mb-4">Tujuan</h2>
+            <p class="mb-4">Website ini dibuat sebagai bagian dari latihan web development dengan menggunakan HTML,
+                Tailwind CSS, dan JavaScript.</p>
+            <h3 class="text-lg font-semibold mb-2">Visi</h3>
+            <p class="mb-4">Menjadi pengembang web yang mahir dan kreatif sejak usia muda.</p>
+            <h3 class="text-lg font-semibold mb-2">Misi</h3>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Mempelajari teknologi web modern.</li>
+                <li>Mengembangkan kreativitas melalui desain dan coding.</li>
+                <li>Membuat proyek nyata untuk pembelajaran.</li>
+            </ul>
+        </div>
+    </section>
 
-        <hr>
+    <!-- Portofolio -->
+    <section id="portofolio" class="p-4 sm:p-8 border-t text-center">
+        <h2 class="text-xl font-bold mb-6">Portofolio</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-20 rounded-full border"></div>
+                <p class="mt-2">Project 1</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-20 rounded-full border"></div>
+                <p class="mt-2">Project 2</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-20 h-20 rounded-full border"></div>
+                <p class="mt-2">Project 3</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Portofolio -->
-        <section id="portfolio" class="text-center h-[400px] bg-gray-100">
-            <header>
-                <h1 class="text-3xl font-semibold text-gray-800">Portofolio</h1>
-            </header>
-            <p class="mx-auto w-fit mt-4">We are team of passionate individuals dedicated to delivering high-quality
-                work.</p>
-        </section>
+    <!-- Message Us -->
+    <section id="messageUs" class="p-4 sm:p-8 border-t flex flex-col md:flex-row gap-6">
+        <form id="userForm" class="flex-1 space-y-4">
+            <div>
+                <label class="block font-medium">Nama :</label>
+                <input id="nama" type="text" class="border p-2 w-full" placeholder="Nama" />
+            </div>
+            <div>
+                <label class="block font-medium">Tanggal Lahir :</label>
+                <input id="tanggal" type="date" class="border p-2 w-full" />
+            </div>
+            <div>
+                <label class="block font-medium">Jenis Kelamin :</label>
+                <div class="flex space-x-4 mt-1">
+                    <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+            </div>
+            <div>
+                <label class="block font-medium">Pesan :</label>
+                <textarea id="pesan" class="border p-2 w-full h-32 resize-none" placeholder="Pesan"></textarea>
+            </div>
+            <button id="submitBtn" type="button" class="w-full bg-gray-200 p-2 rounded">Submit</button>
+        </form>
+        <div class="flex-1 border p-4 text-sm space-y-2">
+            <p><strong>Current time :</strong> <span id="time"></span></p>
+            <p><strong>Input Time :</strong> <span id="input-time">HH/SS/MM</span></p>
+            <p><strong>Nama :</strong> <span id="Nama-pesan">Name</span></p>
+            <p><strong>Tanggal Lahir :</strong> <span id="tgl-pesan">Tgl Lahir</span></p>
+            <p><strong>Jenis Kelamin :</strong> <span id="gender-pesan">Jenis Kelamin</span></p>
+            <p><strong>Pesan :</strong> <span id="pesan-pesan">Pesan</span></p>
+        </div>
+    </section>
 
-        <hr>
-
-        <!-- Message Us -->
-        <section id="messageUs" class="h-[400px] bg-gray-100">
-            <h1 class="text-3xl font-semibold text-gray-800 mt-4">Message Us</h1>
-            <form action="">
-                <label for="message" class="block text-gray-700">Your Message:</label>
-                <textarea id="message" rows="4" class="w-full p-2 border border-gray-300 rounded"></textarea>
-                <button type="button" onclick="sendMessage()"
-                    class="mt-2 bg-blue-500 text-white py-2 px-4 rounded">Send</button>
-            </form>
-        </section>
-
-    </main>
     <!-- Footer -->
-    <footer class="flex items-center justify-center p-4 bg-gray-200">
-        <span>&copy; 2024 Axel Portfolio</span>
+    <footer class="border-t p-4 text-center text-sm text-gray-500">
+        &copy; 2025 Portofolio Axel. All rights reserved.
     </footer>
-    <!--
-        Script eksternal:
-        - js/script.js berisi fungsi interaktif welcomeSpeech dan sendMessage.
-    -->
-    <!-- JS External -->
-    <script src="js/script.js"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
