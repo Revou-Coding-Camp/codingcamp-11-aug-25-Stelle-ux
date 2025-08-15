@@ -57,12 +57,17 @@ window.onload = function () {
 
         // Tambahkan waktu input ke bagian bawah
     let now = new Date();
-    let waktuInput = now.toLocaleString("id-ID", {
+    let waktuInput = now.toLocaleTimeString("id-ID", {
         hour: "2-digit",
         minute: "2-digit",
-        second: "2-digit"
+        second: "2-digit",
     });
-    document.getElementById("input-time").textContent = waktuInput;
+        document.getElementById("input-time").textContent = waktuInput;
+        
+        if (!namaBaru || !tglBaru || !genderBaru || !pesanBaru) {
+    alert("Mohon isi semua form sebelum submit.");
+    return;
+}
 
         // Reset form
         document.getElementById("nama").value = "";
