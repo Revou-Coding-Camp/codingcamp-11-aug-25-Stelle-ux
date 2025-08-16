@@ -1,20 +1,32 @@
-# Profil Web - Tyaga Axellatio Fathirizqi Apriyanto
+# 🌐 Website Pribadi - Tyaga Axellatio Fathirizqi Apriyanto
 
-Ini adalah website profil pribadi yang dibuat sebagai tugas akhir dalam program RevoU Coding Camp.
+Ini adalah website portofolio pribadi yang dibuat sebagai latihan dalam program **RevoU Coding Camp**. Website ini merupakan bagian dari proses belajar saya di bidang **Web Development**, khususnya Frontend dan UI/UX.
+
+---
 
 ## 👤 Tentang Website
 
-Website ini menampilkan informasi tentang saya, termasuk:
+Website ini menampilkan informasi pribadi seperti:
 
-- Nama lengkap
-- Deskripsi singkat diri
-- Hobi
-- Visi & misi pribadi
-- Foto profil
+- Nama lengkap  
+- Deskripsi singkat tentang saya  
+- Foto profil  
+- Visi, misi, dan tujuan pribadi  
+- Formulir interaktif untuk pengunjung  
 
-Selain itu, terdapat **formulir pengunjung** yang bisa diisi oleh siapa saja dan akan menampilkan hasil inputnya secara langsung.
+---
 
-## 📂 Struktur Proyek
+## 🎯 Tujuan Pembuatan
+
+Website ini dibuat untuk:
+
+- Mendokumentasikan perjalanan belajar saya dalam web development  
+- Melatih kemampuan dalam menggunakan **HTML**, **Tailwind CSS**, dan **JavaScript**  
+- Menjadi awal dari portofolio saya sebagai calon Fullstack Engineer  
+
+---
+
+## 📁 Struktur Folder
 
 ```
 .
@@ -24,32 +36,41 @@ Selain itu, terdapat **formulir pengunjung** yang bisa diisi oleh siapa saja dan
 ├── js/
 │   └── script.js
 ├── IMG/
-│   └── foto-profil.jpg
+│   └── profile.jpg
 ```
 
-## ⚙️ Fitur yang Digunakan
+---
 
-- HTML untuk struktur halaman
-- CSS untuk desain tampilan
-- JavaScript untuk interaktivitas form
-- GitHub Pages untuk publikasi website
+## ⚙️ Teknologi yang Digunakan
 
-## ⏱️ Catatan Tambahan
+- **HTML** – Struktur halaman  
+- **Tailwind CSS** – Styling responsif dan efisien  
+- **JavaScript** – Interaktivitas form pengunjung  
+- **GitHub Pages** – Untuk publikasi website secara gratis  
 
-Formulir pengunjung akan menampilkan:
+---
 
-- Nama
-- Tanggal kunjungan
-- Jenis kelamin
-- Pesan
-- **Waktu pengisian** (jam, menit, detik)
+## ⏱️ Fitur Formulir
 
-## 🌐 Link Web
+Formulir "Message Us" menampilkan secara langsung:
 
-Website dapat diakses di:
-➡️ [https://github.com/Revou-Coding-Camp/codingcamp-11-aug-25-Stelle-ux](https://revou-coding-camp.github.io/codingcamp-11-aug-25-Stelle-ux/)
+- Nama pengguna  
+- Tanggal lahir  
+- Jenis kelamin  
+- Pesan  
+- Waktu pengisian (real-time)  
+
+---
+
+## 🔗 Link Website
+
+Website ini dapat diakses secara publik melalui GitHub Pages:  
+➡️ [https://revou-coding-camp.github.io/codingcamp-11-aug-25-Stelle-ux/](https://revou-coding-camp.github.io/codingcamp-11-aug-25-Stelle-ux/)
+
+---
 
 ## 🧑‍💻 Author
 
-Tyaga Axellatio Fathirizqi Apriyanto
-RevoU Coding Camp - 11 Agustus 2025
+**Tyaga Axellatio Fathirizqi Apriyanto**  
+Pelajar yang sedang mendalami Web Development, UI/UX, serta mengikuti course Software Engineer di RevoU.  
+Cita-cita saya adalah menjadi seorang **Fullstack Engineer** yang kreatif dan adaptif di masa depan.
