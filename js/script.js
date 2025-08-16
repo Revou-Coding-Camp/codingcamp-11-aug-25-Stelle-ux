@@ -66,6 +66,7 @@ window.onload = function () {
         
         if (!namaBaru || !tglBaru || !genderBaru || !pesanBaru) {
     alert("Mohon isi semua form sebelum submit.");
+    alert("Mohon isi semua form sebelum submit.");
     return;
 }
 
